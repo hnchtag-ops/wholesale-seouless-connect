@@ -32,6 +32,7 @@ export function Orders({
 
   const handleCheckoutSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!activeProduct) return;
     const newOrder: Order = {
       id: `ord_${Math.floor(Math.random() * 90000 + 10000)}`,
       buyerId: currentUser.id,
