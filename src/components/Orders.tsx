@@ -130,23 +130,23 @@ export function Orders({
           <div className="bg-card border border-border rounded-3xl max-w-xl w-full p-8 shadow-2xl relative">
             <h2 className="text-xl font-extrabold text-foreground mb-2">Create Wholesale Order</h2>
             <p className="text-xs text-muted-foreground mb-6">
-              Review MOQ requirements and tier discounts for {activeProduct.name}
+              Review MOQ requirements and tier discounts for {selectedProductForOrder.name}
             </p>
 
             <form onSubmit={handleCheckoutSubmit} className="space-y-6">
               <div className="flex items-center gap-4 p-4 rounded-2xl bg-secondary border border-border">
                 <img
-                  src={activeProduct.images[0]}
-                  alt={activeProduct.name}
+                  src={selectedProductForOrder.images[0]}
+                  alt={selectedProductForOrder.name}
                   className="w-16 h-16 rounded-xl object-cover"
                 />
                 <div>
-                  <h4 className="text-sm font-bold text-foreground">{activeProduct.name}</h4>
+                  <h4 className="text-sm font-bold text-foreground">{selectedProductForOrder.name}</h4>
                   <p className="text-xs text-primary font-semibold">
-                    ${activeProduct.wholesalePriceUSD.toFixed(2)} per unit
+                    ${selectedProductForOrder.wholesalePriceUSD.toFixed(2)} per unit
                   </p>
                   <p className="text-[10px] text-muted-foreground">
-                    Minimum Order Quantity (MOQ): {activeProduct.moq}
+                    Minimum Order Quantity (MOQ): {selectedProductForOrder.moq}
                   </p>
                 </div>
               </div>
@@ -159,7 +159,7 @@ export function Orders({
                     onChange={(e) => setSelectedVariantId(e.target.value)}
                     className="w-full mt-1 bg-secondary border border-border rounded-xl p-3 text-sm text-foreground focus:outline-none focus:border-primary"
                   >
-                    {activeProduct.variants.map((v) => (
+                    {selectedProductForOrder.variants.map((v) => (
                       <option key={v.id} value={v.id}>
                         {v.color} - {v.size} ({v.inventoryCount} in stock)
                       </option>
@@ -170,7 +170,7 @@ export function Orders({
                   <label className="text-xs font-bold text-muted-foreground uppercase">Quantity (Units)</label>
                   <input
                     type="number"
-                    min={activeProduct.moq}
+                    min={selectedProductForOrder.moq}
                     value={quantity}
                     onChange={(e) => setQuantity(Number(e.target.value))}
                     className="w-full mt-1 bg-secondary border border-border rounded-xl p-3 text-sm text-foreground focus:outline-none focus:border-primary"
