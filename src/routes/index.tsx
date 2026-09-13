@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  const [currentUser, setCurrentUser] = useState<UserProfile>(mockUserProfiles[0]);
+  const [currentUser, setCurrentUser] = useState<UserProfile>(mockUserProfiles[0]!);
   const [activeTab, setActiveTab] = useState<string>("dashboard");
 
   const [products, setProducts] = useState<ProductCatalogItem[]>(mockProducts);
