@@ -1,0 +1,95 @@
+{
+  "capabilities": [
+    {
+      "capability": "code",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "Recreate Vite React SPA as TanStack Start app with the same tabbed dashboard, catalog, orders, agents, and analytics views",
+      "status": "verified",
+      "next_action": "None"
+    },
+    {
+      "capability": "schema",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "No database schema found in source; app runs on local mock data",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "records",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "No record export supplied; mock data embedded in source will be ported",
+      "status": "pending",
+      "next_action": "If real data exists, provide CSV/JSON exports after preview"
+    },
+    {
+      "capability": "auth identities",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "No real auth; source uses a local persona switcher with mock users",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "authorization",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "Role checks are client-side only against mock user state",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "uploaded file bytes",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "No file uploads in source",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "external providers",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "Supabase, Gemini, and Stripe env vars present but unused in component code; no live provider calls",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "public endpoints",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "No public endpoints in source",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "callbacks/webhooks",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "No callbacks or webhooks in source",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "schedules",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "No scheduled jobs in source",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "secrets",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "Env var names preserved for reference but not required for mock functionality",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "cutover",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "No production cutover needed",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "verification",
+      "source": "github:b2bwholesalemp/b2b-seouless",
+      "outcome": "Production build succeeded and browser preview confirmed all five tabs render correctly",
+      "status": "verified",
+      "next_action": "None"
+    }
+  ]
+}
