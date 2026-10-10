@@ -1,24 +1,34 @@
-# Wholesale Seouless Connect
+# 🌐 SEOUL Wholesale Connect
 
-https://github.com/b2bwholesalemp/b2b-seouless.git
+An enterprise-grade B2B connectivity platform and web app built with TypeScript, TanStack Start, and Vite. Designed to bridge wholesale catalog management with dynamic partner order workflows.
 
-This project was built with [Lovable](https://lovable.dev).
+---
 
-## Build with Lovable
+## 🛠️ Tech Stack & Architecture
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/6f586b97-f071-4b3d-bb61-c51d7e98a5fe).
+* **Framework & Routing:** TanStack Start, React / TypeScript (97.8%)
+* **UI & Styling:** Tailwind CSS, Custom UI Components (`components.json`)
+* **Build Tooling:** Vite (`vite.config.ts`), Bun (`bun.lock`), ESLint & Prettier
+* **Code Quality & Agent Integration:** Automated code maintenance (`AGENTS.md`)
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+---
 
-## Development
+## 🔑 Key Features
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+* **High-Performance SSR & Client Routing:** Leverages TanStack Start for lightning-fast page loads and server-side state hydration.
+* **Modular UI Components:** Reusable component architecture (`src/`) for scalable B2B catalog views and checkout interfaces.
+* **Modern Developer Tooling:** Configured with strict TypeScript checking (`tsconfig.json`) and automated formatting for enterprise standards.
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+---
+
+## ⚙️ Local Development Setup
+
+### Prerequisites
+* Node.js (v18+)
+* Bun or NPM
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/hnchtag-ops/wholesale-seouless-connect.git](https://github.com/hnchtag-ops/wholesale-seouless-connect.git)
+   cd wholesale-seouless-connect
